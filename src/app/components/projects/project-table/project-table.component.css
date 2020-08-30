@@ -1,0 +1,21 @@
+table {
+    width: 100%;
+}
+
+th.mat-header-cell {
+    background-color: #673AB7;
+    color: #FFF
+}
+  
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+tr.mat-row:nth-child(odd) {
+    background-color:#FFF;
+}
+
+.mat-row:nth-child(even) {
+    background-color:#EFEFEF;
+}
+
