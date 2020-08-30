@@ -1,0 +1,25 @@
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-toggle-container {
+    width: 25%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mat-icon {
+    font-size: 1.75rem;
+}
+
+.mat-form-field {
+    width: 25%;
+}
+
+.caret-left {
+    transform: scaleX(-1);
+}

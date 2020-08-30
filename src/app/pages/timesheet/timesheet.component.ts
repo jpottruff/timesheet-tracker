@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./timesheet.component.css']
 })
 export class TimesheetComponent implements OnInit {
-
+  
+  pageTitle="timesheet"
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: 'review', component: ReviewComponent},
 
   // Redirects
-  { path: '',   redirectTo: '/login', pathMatch: 'full' }, // redirect to `first-component`
+  {path: '',   redirectTo: '/login', pathMatch: 'full' }, 
   
   // Wild Card
   {path: '**', component: PageNotFoundComponent},

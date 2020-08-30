@@ -1,9 +1,18 @@
 <mat-toolbar color="primary">
   <mat-icon>more_time</mat-icon>
-  <span>timesheet tracker</span>
+  <span color="accent">timesheet tracker</span>
+  
   <nav color="primary">
-    <a *ngFor="let page of pages" mat-button routerLink={{page}} routerLinkActive="active">{{page}}</a> 
+    <a mat-button 
+       class="nav-link" 
+       *ngFor="let page of pages" 
+       routerLink={{page}} 
+       routerLinkActive="active">
+    {{page}}
+    </a> 
   </nav>
+
   <span class="spacer"></span>
-  <button mat-flat-button href="#" color="accent">Logout</button>
+  
+  <app-logout-button></app-logout-button>
 </mat-toolbar>
