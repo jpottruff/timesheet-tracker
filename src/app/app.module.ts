@@ -23,11 +23,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ApproverTableComponent } from './components/approvers/approver-table/approver-table.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import { MatInputModule } from '@angular/material/input';
     TitleComponent,
     ProjectTableComponent,
     TimesheetDateComponent,
+    ApproverTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,11 +58,13 @@ import { MatInputModule } from '@angular/material/input';
     MatIconModule,
     MatListModule,
     MatTableModule,
+    MatSortModule,
     MatSlideToggleModule,
     MatFormFieldModule,
     MatInputModule, 
     MatDatepickerModule,
     MatNativeDateModule,
+    MatExpansionModule,
     AppRoutingModule
   ],
   providers: [
