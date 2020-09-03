@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  pages = ['timesheet', 'projects', 'review', 'approvers'];
+  pages = ['timesheet', 
+            'projects', 
+            'review', 
+            'admin', 
+            'approvers'];
 
   constructor() {}
 }

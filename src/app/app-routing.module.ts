@@ -7,6 +7,7 @@ import { ApproversComponent } from './pages/approvers/approvers.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ReviewComponent } from './pages/review/review.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
   // Routes
@@ -15,7 +16,7 @@ const routes: Routes = [
   {path: 'approvers', component: ApproversComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'review', component: ReviewComponent},
-
+  {path: 'admin', component: AdminComponent},
   // Redirects
   {path: '',   redirectTo: '/login', pathMatch: 'full' }, 
   

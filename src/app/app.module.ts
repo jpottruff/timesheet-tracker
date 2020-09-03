@@ -13,6 +13,9 @@ import { LogoutButtonComponent } from './components/logout-button/logout-button.
 import { TitleComponent } from './components/title/title.component';
 import { ProjectTableComponent } from './components/projects/project-table/project-table.component';
 import { TimesheetDateComponent } from './components/timesheet/timesheet-date/timesheet-date.component';
+import { ApproverTableComponent } from './components/approvers/approver-table/approver-table.component';
+import { ApproverExpansionPanelComponent } from './components/approvers/approver-expansion-panel/approver-expansion-panel.component';
+import { AdminComponent } from './pages/admin/admin.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,7 +33,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { ApproverTableComponent } from './components/approvers/approver-table/approver-table.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +51,8 @@ import { ApproverTableComponent } from './components/approvers/approver-table/ap
     ProjectTableComponent,
     TimesheetDateComponent,
     ApproverTableComponent,
+    ApproverExpansionPanelComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +71,7 @@ import { ApproverTableComponent } from './components/approvers/approver-table/ap
     MatDatepickerModule,
     MatNativeDateModule,
     MatExpansionModule,
+    MatTabsModule,
     AppRoutingModule
   ],
   providers: [
