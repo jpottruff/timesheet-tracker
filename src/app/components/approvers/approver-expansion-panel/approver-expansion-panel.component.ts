@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {APPROVER_QUERY_DATA} from '../../../../../mock-data/user-mock.data';
 
 @Component({
   selector: 'app-approver-expansion-panel',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApproverExpansionPanelComponent implements OnInit {
 
+  approvers = APPROVER_QUERY_DATA;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log(this.approvers);
   }
 
 }

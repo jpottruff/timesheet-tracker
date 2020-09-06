@@ -1,26 +1,18 @@
-<p>approver-expansion-pannel works!</p>
-
 <mat-accordion>
-    <mat-expansion-panel>
+    <mat-expansion-panel *ngFor="let approver of approvers">
         <mat-expansion-panel-header>
             <mat-panel-title>
-                Approver Name
+                {{approver.approver.username}}
             </mat-panel-title>
             <mat-panel-description>
-                <!-- <button mat-fab 
-                        color="warn" 
-                        aria-label="Example icon button with a home icon" 
-                        (click)="addApprovees(element)"> -->
                         <mat-icon>person</mat-icon>
-                        <i>## approvees</i>
+                        <i>{{approver.approvees.length}}</i>
+                        <span> &nbsp; approvees</span>
                         <!-- <mat-icon>person_outline</mat-icon> -->
-                        <!-- <i>(click to view approvees)</i> -->
-                <!-- </button>   -->
             </mat-panel-description>
         </mat-expansion-panel-header>
+
         <p>Approvees go here</p>
     </mat-expansion-panel>
 </mat-accordion>  
-   
 
-    <!-- TODO - chips -->
