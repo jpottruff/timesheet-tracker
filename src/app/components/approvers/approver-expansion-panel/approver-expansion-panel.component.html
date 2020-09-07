@@ -12,7 +12,9 @@
             </mat-panel-description>
         </mat-expansion-panel-header>
 
-        <p>Approvees go here</p>
+        <!-- Expansion Content -->
+        <h3>{{approver.approver.firstname}} {{approver.approver.lastname}}'s Approvees:</h3>
+        <app-approvee-list [approvees]="approver.approvees"></app-approvee-list>
     </mat-expansion-panel>
 </mat-accordion>  
 

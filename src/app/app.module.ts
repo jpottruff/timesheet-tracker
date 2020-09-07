@@ -13,16 +13,17 @@ import { LogoutButtonComponent } from './components/shared/logout-button/logout-
 import { TitleComponent } from './components/shared/title/title.component';
 import { ProjectTableComponent } from './components/projects/project-table/project-table.component';
 import { TimesheetDateComponent } from './components/timesheet/timesheet-date/timesheet-date.component';
-import { ApproverTableComponent } from './components/approvers/approver-table/approver-table.component';
 import { ApproverExpansionPanelComponent } from './components/approvers/approver-expansion-panel/approver-expansion-panel.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { AppRoutingModule } from './app-routing.module';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppMaterialModule } from './modules/app-material.module';
 import { ThemeSelectorComponent } from './components/shared/theme-selector/theme-selector.component';
-
+import { ApproveeListComponent } from './components/approvers/approvee-list/approvee-list.component';
+import { DialogButtonComponent } from './components/shared/dialog-button/dialog-button.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,17 +40,20 @@ import { ThemeSelectorComponent } from './components/shared/theme-selector/theme
     TitleComponent,
     ProjectTableComponent,
     TimesheetDateComponent,
-    ApproverTableComponent,
     ApproverExpansionPanelComponent,
     AdminComponent,
     ThemeSelectorComponent,
+    ApproveeListComponent,
+    DialogButtonComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
     AppMaterialModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule
   ],
   providers: [
     // MatDatepickerModule

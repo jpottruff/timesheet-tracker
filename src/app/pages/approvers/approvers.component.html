@@ -1,4 +1,12 @@
-<app-title [title]="pageTitle"></app-title>
-<p>This is an admin screen and will show approvers group that the admin is currently logged in under</p>
+<div class="info-section">
+    <p>This is an admin screen and will show all the approvers belonging to the group that the current user is logged in under</p>
+    <p>It will only be visible to users marked as admins</p>
+</div>
+
+<div class="add-section">
+    <app-dialog-button icon="person_add" 
+                       dialogContent="UserListComponent">
+    </app-dialog-button>
+</div>
 
 <app-approver-expansion-panel></app-approver-expansion-panel>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ApproverTableComponent } from './approver-table.component';
+import { ApproveeListComponent } from './approvee-list.component';
 
-describe('ApproverTableComponent', () => {
-  let component: ApproverTableComponent;
-  let fixture: ComponentFixture<ApproverTableComponent>;
+describe('ApproveeListComponent', () => {
+  let component: ApproveeListComponent;
+  let fixture: ComponentFixture<ApproveeListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ApproverTableComponent ]
+      declarations: [ ApproveeListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ApproverTableComponent);
+    fixture = TestBed.createComponent(ApproveeListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

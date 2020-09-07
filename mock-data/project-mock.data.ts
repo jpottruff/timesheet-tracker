@@ -1,6 +1,6 @@
 import {Project} from '../src/app/classes/project'
 
-export const PROJECT_DATA: Project[] = [
+export const PROJECT_QUERY_DATA: Project[] = [
     {projectId: 1, projectName: 'Test Project 1', groupId: 1, isActive: true, referenceNo: 1111},
     {projectId: 2, projectName: 'Test Project 2', groupId: 1, isActive: true, referenceNo: 1112},
     {projectId: 3, projectName: 'Test Project 3', groupId: 1, isActive: false, referenceNo: 1113},

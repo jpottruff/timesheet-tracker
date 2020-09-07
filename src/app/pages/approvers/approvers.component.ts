@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApproversComponent implements OnInit {
 
-  pageTitle="approvers"
-  
   constructor() { }
 
   ngOnInit(): void {

@@ -9,8 +9,7 @@ export class NavbarComponent {
   pages = ['timesheet', 
             'projects', 
             'review', 
-            'admin', 
-            'approvers'];
+            'admin' ];
 
   constructor() {}
 }

@@ -1,0 +1,22 @@
+<!-- <mat-grid-list cols="5" rowHeight="48px">
+    <mat-grid-tile *ngFor="let approvee of approvees" >
+        <mat-chip  color="primary" 
+                   [selectable]="selectable"
+                   [removable]="removable" 
+                   (removed)="remove(approvee)">
+          {{approvee.firstname}} {{approvee.lastname}}
+          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+    </mat-grid-tile>
+</mat-grid-list> -->
+
+<mat-chip-list class="mat-chip-list-stacked">
+    <mat-chip *ngFor="let approvee of approvees" 
+               color="primary" 
+               [selectable]="selectable"
+               [removable]="removable" 
+               (removed)="remove(approvee)">
+      {{approvee.firstname}} {{approvee.lastname}}
+      <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+    </mat-chip>
+</mat-chip-list>

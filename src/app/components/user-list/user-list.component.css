@@ -1,0 +1,8 @@
+.username {
+    color: grey;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}

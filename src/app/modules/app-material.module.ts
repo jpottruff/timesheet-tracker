@@ -15,6 +15,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   exports: [
@@ -33,7 +36,10 @@ import { MatRadioModule } from '@angular/material/radio';
     MatExpansionModule,
     MatTabsModule,
     MatMenuModule,
-    MatRadioModule
+    MatRadioModule, 
+    MatChipsModule,
+    MatGridListModule,
+    MatDialogModule
   ]
 })
 export class AppMaterialModule { }

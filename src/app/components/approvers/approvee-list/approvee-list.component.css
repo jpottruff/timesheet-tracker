@@ -1,0 +1,5 @@
+.mat-chip {
+    max-width: 150px;
+    /* Puts icon at the right side */
+    justify-content: space-between; 
+}
