@@ -1,12 +1,11 @@
-<div class="info-section">
-    <p>This is an admin screen and will show all the approvers belonging to the group that the current user is logged in under</p>
-    <p>It will only be visible to users marked as admins</p>
-</div>
-
-<div class="add-section">
-    <app-dialog-button icon="person_add" 
-                       dialogContent="UserListComponent">
+<mat-toolbar>
+    <span>Username</span>
+    <span class="mat-toolbar-spacer"></span>
+    <app-dialog-button class="add-btn"
+                       tooltipMsg="Click to add approvers"
+                       icon="person_add" 
+                       dialogContent="AddApproversDialogComponent">
     </app-dialog-button>
-</div>
+</mat-toolbar>
 
 <app-approver-expansion-panel></app-approver-expansion-panel>

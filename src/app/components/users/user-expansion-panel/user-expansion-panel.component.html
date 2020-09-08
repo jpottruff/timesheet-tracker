@@ -1,0 +1,26 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let user of users; let i = index"
+                         (opened)="panelStates[i] = true"
+                         (closed)="panelStates[i] = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <ng-container *ngIf="!panelStates[i]; else userIcon">
+                    {{user.username}}
+                </ng-container>
+                <ng-template #userIcon>
+                    <mat-icon>blur_on</mat-icon>
+                </ng-template>
+            </mat-panel-title>
+            <mat-panel-description>
+                <ng-template [ngIf]="!panelStates[i]">
+                    <mat-icon>person_outline</mat-icon>
+                    {{user.firstname}} {{user.lastname}}
+                </ng-template>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <!-- Expansion Content -->
+        <app-user-profile [user]="user"></app-user-profile>
+    </mat-expansion-panel>
+</mat-accordion>  
+

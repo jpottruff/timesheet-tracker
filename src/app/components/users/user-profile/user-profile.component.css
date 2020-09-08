@@ -1,0 +1,8 @@
+.user-card {
+    max-width: 400px;
+}
+  
+.user-image {
+    background-image: url('http://lorempixel.com/400/200/animals');
+    background-size: cover;
+}

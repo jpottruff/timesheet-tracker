@@ -1,0 +1,15 @@
+<h3> Group Name: 
+    <i>GROUP</i> 
+    <app-edit-button dialogContent="EditGroupNameComponent"></app-edit-button>
+</h3>
+
+<mat-toolbar>
+    <span>Group Admins</span>
+    <span class="mat-toolbar-spacer"></span>
+    <app-dialog-button class="add-btn"
+                       tooltipMsg="Click to add group admins"
+                       icon="person_add" 
+                       dialogContent="EditGroupAdminsDialogComponent">
+    </app-dialog-button>
+</mat-toolbar>
+<app-user-expansion-panel [users]="adminUsers"></app-user-expansion-panel>

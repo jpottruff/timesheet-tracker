@@ -1,0 +1,8 @@
+.edit-icon {
+    margin-left: 10px;
+    color: grey;
+    font-size: .75rem;
+}
+.edit-icon:hover{
+    color: #FFF;
+}

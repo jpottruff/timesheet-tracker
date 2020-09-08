@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { USERS } from '../../../../mock-data/user-mock.data'
 import { User } from 'src/app/classes/user';
+import { USERS } from '../../../../../mock-data/user-mock.data'
+
+
 @Component({
-  selector: 'app-user-list',
-  templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.css']
+  selector: 'app-add-approvers-dialog',
+  templateUrl: './add-approvers-dialog.component.html',
+  styleUrls: ['./add-approvers-dialog.component.css']
 })
-export class UserListComponent implements OnInit {
+export class AddApproversDialogComponent implements OnInit {
 
   users: User[];
   selectedUsers; 
@@ -21,6 +23,5 @@ export class UserListComponent implements OnInit {
   addApprovers() {
     console.log('ADDING to DB: ', this.selectedUsers);
   }
-
 
 }

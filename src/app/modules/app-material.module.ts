@@ -18,6 +18,10 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+
 
 @NgModule({
   exports: [
@@ -39,7 +43,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatRadioModule, 
     MatChipsModule,
     MatGridListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule,
+    MatCardModule,
+    ClipboardModule 
   ]
 })
 export class AppMaterialModule { }

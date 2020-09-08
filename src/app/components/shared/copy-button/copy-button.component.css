@@ -1,0 +1,9 @@
+.copy-icon {
+    margin-left: 10px;
+    color: grey;
+    font-size: .75rem;
+    cursor: pointer;
+}
+.copy-icon:hover{
+    color: #FFF;
+}

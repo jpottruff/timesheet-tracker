@@ -1,28 +1,26 @@
 <app-title [title]="pageTitle"></app-title>
 <mat-tab-group mat-align-tabs="start">
-    <!-- <mat-tab label="First">Content 1</mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
-    <mat-tab label="Third">Content 3</mat-tab> -->
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="tab-icon">psychology</mat-icon>
+        Group Info
+      </ng-template>
+      <app-group></app-group>
+    </mat-tab>  
     
     <mat-tab>
         <ng-template mat-tab-label>
-          <mat-icon class="tab-icon">thumb_up</mat-icon>
+          <mat-icon class="tab-icon">people</mat-icon>
+          Users
+        </ng-template>
+        <app-users></app-users>
+    </mat-tab>
+  
+    <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="tab-icon">assignment_turned_in</mat-icon>
           Approvers
         </ng-template>
         <app-approvers></app-approvers>
-    </mat-tab>
-    <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="tab-icon">thumb_up</mat-icon>
-          Second
-        </ng-template>
-        Content 2
-    </mat-tab>
-    <mat-tab>
-        <ng-template mat-tab-label>
-          <mat-icon class="tab-icon">thumb_up</mat-icon>
-          Third
-        </ng-template>
-        Content 3
     </mat-tab>
 </mat-tab-group>

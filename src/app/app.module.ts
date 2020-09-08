@@ -22,8 +22,17 @@ import { AppMaterialModule } from './modules/app-material.module';
 import { ThemeSelectorComponent } from './components/shared/theme-selector/theme-selector.component';
 import { ApproveeListComponent } from './components/approvers/approvee-list/approvee-list.component';
 import { DialogButtonComponent } from './components/shared/dialog-button/dialog-button.component';
-import { UserListComponent } from './components/user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './pages/users/users.component';
+import { GroupComponent } from './pages/group/group.component';
+import { EditGroupNameDialogComponent } from './components/dialogs/edit-group-name-dialog/edit-group-name-dialog.component';
+import { EditGroupAdminsDialogComponent } from './components/dialogs/edit-group-admins-dialog/edit-group-admins-dialog.component';
+import { AddApproversDialogComponent } from './components/dialogs/add-approvers-dialog/add-approvers-dialog.component';
+import { EditButtonComponent } from './components/shared/edit-button/edit-button.component';
+import { UserExpansionPanelComponent } from './components/users/user-expansion-panel/user-expansion-panel.component';
+import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
+import { CopyButtonComponent } from './components/shared/copy-button/copy-button.component';
+import { CreateUserDialogComponent } from './components/dialogs/create-user-dialog/create-user-dialog.component';
 
 
 @NgModule({
@@ -45,7 +54,16 @@ import { FormsModule } from '@angular/forms';
     ThemeSelectorComponent,
     ApproveeListComponent,
     DialogButtonComponent,
-    UserListComponent,
+    UsersComponent,
+    GroupComponent,
+    EditGroupNameDialogComponent,
+    EditGroupAdminsDialogComponent,
+    AddApproversDialogComponent,
+    EditButtonComponent,
+    UserExpansionPanelComponent,
+    UserProfileComponent,
+    CopyButtonComponent,
+    CreateUserDialogComponent,
   ],
   imports: [
     BrowserModule,

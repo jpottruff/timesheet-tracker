@@ -1,0 +1,10 @@
+<mat-toolbar>
+    <span>Username</span>
+    <span class="mat-toolbar-spacer"></span>
+    <app-dialog-button class="add-btn"
+                       tooltipMsg="Click to add a new user to your team"
+                       icon="person_add" 
+                       dialogContent="CreateUserDialogComponent">
+    </app-dialog-button>
+</mat-toolbar>
+<app-user-expansion-panel [users]="users"></app-user-expansion-panel>
