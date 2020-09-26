@@ -21,7 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   exports: [
@@ -46,7 +46,8 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     MatDialogModule,
     MatTooltipModule,
     MatCardModule,
-    ClipboardModule 
+    ClipboardModule,
+    MatProgressSpinnerModule 
   ]
 })
 export class AppMaterialModule { }

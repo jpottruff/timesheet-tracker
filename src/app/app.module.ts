@@ -33,6 +33,7 @@ import { UserExpansionPanelComponent } from './components/users/user-expansion-p
 import { UserProfileComponent } from './components/users/user-profile/user-profile.component';
 import { CopyButtonComponent } from './components/shared/copy-button/copy-button.component';
 import { CreateUserDialogComponent } from './components/dialogs/create-user-dialog/create-user-dialog.component';
+import { TimesheetTableComponent } from './components/timesheet/timesheet-table/timesheet-table.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { CreateUserDialogComponent } from './components/dialogs/create-user-dial
     UserProfileComponent,
     CopyButtonComponent,
     CreateUserDialogComponent,
+    TimesheetTableComponent,
   ],
   imports: [
     BrowserModule,

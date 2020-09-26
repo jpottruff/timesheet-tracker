@@ -1,19 +1,19 @@
 <mat-card class="user-card"> 
-    <mat-card-header>
-      <div mat-card-avatar class="user-image"></div>
-      <mat-card-title>{{user.firstname}} {{user.lastname}}</mat-card-title>
-      <mat-card-subtitle>{{user.username}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <h3>Contact</h3>
-      <p>
-        Email: {{user.email}} 
-        <app-copy-button [value]="user.email"></app-copy-button>
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="accent">Active</button>
-      <button mat-raised-button color="accent">Approver</button>
-      <button mat-button>Admin</button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="user-image"></div>
+    <mat-card-title>{{user.firstname}} {{user.lastname}}</mat-card-title>
+    <mat-card-subtitle>{{user.username}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h3>Contact</h3>
+    <p>
+      Email: {{user.email}} 
+      <app-copy-button [value]="user.email"></app-copy-button>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent">Active</button>
+    <button mat-raised-button color="accent">Approver</button>
+    <button mat-button>Admin</button>
+  </mat-card-actions>
+</mat-card>
